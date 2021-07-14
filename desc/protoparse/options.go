@@ -1310,6 +1310,16 @@ func fieldValue(res *parseResult, mc *messageContext, fld fldDescriptorish, val 
 			} else {
 				return ev.GetNumber(), nil
 			}
+		} else if str, ok := v.(string); ok {
+			ev := fld.GetEnumType().FindValueByName(str)
+			if ev == nil {
+				return nil, errorWithPos(val.Start(), "%venum %s has no value named %s", mc, fld.GetEnumType().GetFullyQualifiedName(), id)
+			}
+			if enumAsString {
+				return ev.GetName(), nil
+			} else {
+				return ev.GetNumber(), nil
+			}
 		}
 		return nil, errorWithPos(val.Start(), "%vexpecting enum, got %s", mc, valueKind(v))
 	case dpb.FieldDescriptorProto_TYPE_MESSAGE, dpb.FieldDescriptorProto_TYPE_GROUP:
