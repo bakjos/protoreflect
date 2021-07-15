@@ -7,8 +7,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc/internal"
-	"github.com/jhump/protoreflect/desc/protoparse/ast"
+	"github.com/bakjos/protoreflect/desc/internal"
+	"github.com/bakjos/protoreflect/desc/protoparse/ast"
 )
 
 func (r *parseResult) generateSourceCodeInfo() *dpb.SourceCodeInfo {

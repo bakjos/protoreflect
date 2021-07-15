@@ -2,16 +2,17 @@ package dynamic
 
 import (
 	"fmt"
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"math"
 	"reflect"
 	"testing"
 
+	"github.com/golang/protobuf/protoc-gen-go/descriptor"
+
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/bakjos/protoreflect/desc"
+	"github.com/bakjos/protoreflect/internal/testprotos"
+	"github.com/bakjos/protoreflect/internal/testutil"
 )
 
 // Shared stuff for marshalling and unmarshalling tests. This is used for the binary format, the text

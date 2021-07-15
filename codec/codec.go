@@ -3,8 +3,8 @@ package codec
 import (
 	"io"
 
+	"github.com/bakjos/protoreflect/internal/codec"
 	"github.com/golang/protobuf/proto"
-	"github.com/jhump/protoreflect/internal/codec"
 )
 
 // ErrOverflow is returned when an integer is too large to be represented.

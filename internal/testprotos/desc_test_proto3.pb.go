@@ -8,8 +8,8 @@ package testprotos
 
 import (
 	context "context"
+	pkg "github.com/bakjos/protoreflect/internal/testprotos/pkg"
 	proto "github.com/golang/protobuf/proto"
-	pkg "github.com/jhump/protoreflect/internal/testprotos/pkg"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

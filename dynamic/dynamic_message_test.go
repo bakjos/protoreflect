@@ -7,10 +7,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/internal"
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/bakjos/protoreflect/desc"
+	"github.com/bakjos/protoreflect/internal"
+	"github.com/bakjos/protoreflect/internal/testprotos"
+	"github.com/bakjos/protoreflect/internal/testutil"
 )
 
 var typeOfGenericSlice = reflect.TypeOf([]interface{}(nil))

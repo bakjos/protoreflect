@@ -1,6 +1,6 @@
 package protoparse
 
-import "github.com/jhump/protoreflect/desc/protoparse/ast"
+import "github.com/bakjos/protoreflect/desc/protoparse/ast"
 
 // SourcePos is the same as ast.SourcePos. This alias exists for
 // backwards compatibility (SourcePos used to be defined in this package.)

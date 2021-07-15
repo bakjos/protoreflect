@@ -18,6 +18,7 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
+
 	// link in the well-known-types that have a special JSON format
 	_ "github.com/golang/protobuf/ptypes/any"
 	_ "github.com/golang/protobuf/ptypes/duration"
@@ -26,7 +27,7 @@ import (
 	_ "github.com/golang/protobuf/ptypes/timestamp"
 	_ "github.com/golang/protobuf/ptypes/wrappers"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/bakjos/protoreflect/desc"
 )
 
 var wellKnownTypeNames = map[string]struct{}{

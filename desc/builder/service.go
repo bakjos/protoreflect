@@ -6,8 +6,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/desc/internal"
+	"github.com/bakjos/protoreflect/desc"
+	"github.com/bakjos/protoreflect/desc/internal"
 )
 
 // ServiceBuilder is a builder used to construct a desc.ServiceDescriptor.

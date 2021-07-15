@@ -7,9 +7,9 @@
 package testprotos
 
 import (
+	nopkg "github.com/bakjos/protoreflect/internal/testprotos/nopkg"
+	pkg "github.com/bakjos/protoreflect/internal/testprotos/pkg"
 	proto "github.com/golang/protobuf/proto"
-	nopkg "github.com/jhump/protoreflect/internal/testprotos/nopkg"
-	pkg "github.com/jhump/protoreflect/internal/testprotos/pkg"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
